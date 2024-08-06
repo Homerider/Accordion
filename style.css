@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 75px;
+}
+
+.faq-subtitle {
+    display: flex;
+    place-content: center;
+    font-size: 18px;
+}
+
+.faq-subtitle__label {
+    width: 40px;
+    height: 5px;
+    background: #34675C;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.faq__wrapper {
+    display: grid;
+    margin-top: 100px;
+    grid-gap: 10px;
+}
+
+.faq-item__wrapper {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.faq-item {
+    display: flex;
+}
+
+.faq-item__label {
+    display: grid;
+    width: 10px;
+    min-height: 100px;
+    background: #34675C;
+}
+
+.faq-item__content {
+    position: relative;
+    padding: 40px 100px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #CBCBCB;
+    border-left: none;
+}
+
+.faq-item__opener {
+    position: absolute;
+    top: 48px;
+    right: 103px;
+    width: 21px;
+    height: 4px;
+    background: #636363;
+}
+
+.faq-item__opener.plus::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 4px;
+    background: #636363;
+    transform: rotate(90deg);
+}
+
+.opened .faq-item__opener {
+    display: none;
+}
+
+.faq-item__minus {
+    position: absolute;
+    top: 48px;
+    right: 103px;
+    width: 21px;
+    height: 4px;
+    background: #636363;
+    display: none;
+}
+
+.opened .faq-item__minus {
+    display: block;
+}
+
+.faq-item__content__text {
+    display: none;
+    padding: 22px 100px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 100%;
+    border: 1px solid #CBCBCB;
+}
+
+.opened .faq-item__content__text {
+    display: block;
+}
+
+.button {
+    display: grid;
+    margin: 64px auto;
+    padding: 15px 64px;
+    width: 270.34px;
+    height: 50px;
+    background: #F57C00;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+.button::before {
+    content: "\279C";
+    position: absolute;
+    width: 21px;
+    height: 4px;
+    margin-top: 16px;
+    margin-left: 190px;
+}
